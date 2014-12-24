@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+
+        
+
+        <head>
+            <meta charset="utf-8"/>
+            <title>
+        Dispersion - Microsimulation &amp; Risk Modelling Group
+    </title>
+            <link rel="stylesheet" type="text/css" href="css/page.css"/>
+        </head>
+
+        <body>
+        <div class="container_12">
+          <div id="header-grid" class="grid_12">
+                <div id="logo"></div>
+                <h1>Microsimulation &amp; Risk Modelling Group</h1>
+            </div>
+            <div id="header-body-break" class="clear"></div>
+            <div id="body-grid" class="grid_9 push_3">
+                <div id="body">
+
+                    
+        <h2>Dispersion</h2>
+    
+
+                    
+
+<p>The dispersion module was developed to satisfy a need for chaotic behaviour
+in peeps.  In our <a href="studies-rns.html">RNS case study</a>, one aspect of
+the model was of children playing in a courtyard.  Such behaviour is difficult
+to model directly.</p>
+
+<p class="float-right"><img src="img/peep-movement.png" width="50%"/></p>
+
+<p>Instead, the dispersion module was developed which allowed the environment
+itself to direct the children peeps to move about in a pseudo-random
+fashion.</p>
+
+<p>Any given cell can be given a list of dispersion targets.  At each
+simulated tick, every peep within the origin cell is relocated to a random
+target cell.  In the case of RNS the courtyard was divided into four
+quadrants, each of which dispersed into the others.</p>
+
+<p>The dispersion module was later expanded with the capability to
+discriminate between peeps based on masking; peeps could have their
+destination selected from a specific set of cells based on an attached
+mask.</p>
+
+<p>To date, the dispersion module has been employed in simulating children
+playing (as already noted), movement of workers within a high-rise office
+building, progress through a train station and even the path of airborne
+contagions.</p>
+    
+
+
+                </div>
+            </div>
+            <div id="menu-grid" class="grid_3 pull_9">
+                <h2 class="hide">Navigation</h2>
+               
+
+<ul class="nav no-bullets">
+    <li class="section-begin"><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="microsimulation.html">Microsimulation &amp; Tools</a></li>   
+    <li><a href="sim.html">Simulation Modules</a></li>
+    <li><a href="studies.html">Case Studies</a></li>
+    <li><a href="studies-current.html">Current Projects</a></li>
+    <li><a href="pub.html">Publications</a></li>
+    <li><a href="collaboration.html">Collaborative Partners</a></li>
+    <li><a href="fund.html">Funding</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>  
+            </div>
+            <div class="clear"></div>
+            <div id="footer-grid" class="grid_12">
+                <div id="footer-ornament"></div>
+                <div id="footer-content"></div>
+                <div id="footer-uow-logo"></div>
+                <div id="footer">
+                    
+<div>
+    <p>
+    
+        Copyright &copy; 2014 <a href="http://www.uow.edu.au/">
+            University of Wollongong</a>.  All rights reserved.
+
+        For complete copyright information, see our <a href="copyright.html">copyright page</a>.
+    
+    </p>
+</div>
+                </div>
+            </div>
+        </div>
+        </body>
+       
+    
+</html>

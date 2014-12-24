@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+
+        
+
+        <head>
+            <meta charset="utf-8"/>
+            <title>
+        Infection - Microsimulation &amp; Risk Modelling Group
+    </title>
+            <link rel="stylesheet" type="text/css" href="css/page.css"/>
+        </head>
+
+        <body>
+        <div class="container_12">
+          <div id="header-grid" class="grid_12">
+                <div id="logo"></div>
+                <h1>Microsimulation &amp; Risk Modelling Group</h1>
+            </div>
+            <div id="header-body-break" class="clear"></div>
+            <div id="body-grid" class="grid_9 push_3">
+                <div id="body">
+
+                    
+        <h2>Infection</h2>
+    
+
+                    
+
+<p>Our infection module was the first major simulation component to be
+completed.  It allows us to simulate the spread and progress of a single
+infectious agent through the population.</p>
+
+<p>It was initially used to model the spread of influenza as part of our
+<!--<a href="studies-rns.html">-->Royal Naval School influenza case study.  It works through the use of a relatively simple, though novel, infection model called SLASHR.</p>
+
+<p class="center"><img src="img/infection.png" width="633"/></p>
+
+<p>The module simulates infection spread via close physical contact and tracks
+the progress of the infection from initial infection to either recovery or
+death.  It also incorporates time-dependent isolation and the related concept
+of "hero time".</p>
+
+<p>Isolation simulates the segregation of symptomatic individuals from the
+remainder of the population.  Time-dependence is used to ensure that peeps are
+not isolated at nonsensical times.  In the case of the RNS, consider that a
+student becoming symptomatic during the night is unlikely to be
+instantaneously isolated; it is more likely that their symptoms will only be
+noticed and acted upon in the morning.</p>
+
+<p>Related to this is "hero time"; this approximates the common behaviour of
+people whereby they will ignore or even conceal symptoms of sickness due to
+perceived unimportance.  This concealment is factored into a peep's chance of
+being isolated at any given moment; at the beginning of hero time, a peep has
+a zero percent chance of being "detected".  This increases linearly to the end
+of hero time, at which point the peep has a 100% chance to be detected.</p>
+
+<p>The infection module also provides functionality to control the spread of
+infections based on masking.  This allows the population to be divided into
+different groups which may only infect a specific set of groups.  This can be
+used to implement diseases such as Schistosomiasis.</p>
+
+
+
+                </div>
+            </div>
+            <div id="menu-grid" class="grid_3 pull_9">
+                <h2 class="hide">Navigation</h2>
+               
+
+<ul class="nav no-bullets">
+    <li class="section-begin"><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="microsimulation.html">Microsimulation &amp; Tools</a></li>   
+    <li><a href="sim.html">Simulation Modules</a></li>
+    <li><a href="studies.html">Case Studies</a></li>
+    <li><a href="studies-current.html">Current Projects</a></li>
+    <li><a href="pub.html">Publications</a></li>
+    <li><a href="collaboration.html">Collaborative Partners</a></li>
+    <li><a href="fund.html">Funding</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>  
+            </div>
+            <div class="clear"></div>
+            <div id="footer-grid" class="grid_12">
+                <div id="footer-ornament"></div>
+                <div id="footer-content"></div>
+                <div id="footer-uow-logo"></div>
+                <div id="footer">
+                    
+<div>
+    <p>
+    
+        Copyright &copy; 2014 <a href="http://www.uow.edu.au/">
+            University of Wollongong</a>.  All rights reserved.
+
+        For complete copyright information, see our <a href="copyright.html">copyright page</a>.
+    
+    </p>
+</div>
+                </div>
+            </div>
+        </div>
+        </body>
+       
+    
+</html>

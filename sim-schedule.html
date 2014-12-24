@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+
+        
+
+        <head>
+            <meta charset="utf-8"/>
+            <title>
+        Scheduling - Microsimulation &amp; Risk Modelling Group
+    </title>
+            <link rel="stylesheet" type="text/css" href="css/page.css"/>
+        </head>
+
+        <body>
+        <div class="container_12">
+          <div id="header-grid" class="grid_12">
+                <div id="logo"></div>
+                <h1>Microsimulation &amp; Risk Modelling Group</h1>
+            </div>
+            <div id="header-body-break" class="clear"></div>
+            <div id="body-grid" class="grid_9 push_3">
+                <div id="body">
+
+                    
+        <h2>Scheduling</h2>
+    
+
+                    
+
+<p>An early requirement was for a mechanism that allowed the modeller to
+control the movement of peeps.  The scheduling module provides this
+capability.</p>
+
+<p>Each peep can be given one (or, via the state system, more) schedules.
+These are defined as a sequence of days, each of which consists of
+(time, action) pairs.  Each action may be a location to move to, or one or
+more states to transition into.</p>
+
+<p>For example, a somewhat cynical representation of a stereotypical adult's
+working week might be:</p>
+
+<div class="indent">
+    <ul>
+        <li>7:30 AM, change-state to awake</li>
+        <li>7:45 AM, go-to kitchen</li>
+        <li>7:50 AM, change-state to eating</li>
+        <li>9:00 AM, go-to work</li>
+        <li>9:01 AM, change-state to working</li>
+        <li>4:59 PM, change-state to relaxing</li>
+        <li>5:00 PM, go-to home</li>
+        <li>11:00 PM, go-to bed</li>
+        <li>11:30 AM, change-state to asleep</li>
+    </ul>
+</div>
+
+<p>By combining cyclic schedules with state changes, fairly realistic,
+pseudo-random behaviour can be achieved without the need for complex AI
+routines.</p>
+
+<p>In addition to these cyclic schedules, the module also provides one-off
+event schedules.  Rather than being a list of events over the course of a day,
+it lists events that occur once at a specific date and time.</p>
+
+
+
+                </div>
+            </div>
+            <div id="menu-grid" class="grid_3 pull_9">
+                <h2 class="hide">Navigation</h2>
+               
+
+<ul class="nav no-bullets">
+    <li class="section-begin"><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="microsimulation.html">Microsimulation &amp; Tools</a></li>   
+    <li><a href="sim.html">Simulation Modules</a></li>
+    <li><a href="studies.html">Case Studies</a></li>
+    <li><a href="studies-current.html">Current Projects</a></li>
+    <li><a href="pub.html">Publications</a></li>
+    <li><a href="collaboration.html">Collaborative Partners</a></li>
+    <li><a href="fund.html">Funding</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>  
+            </div>
+            <div class="clear"></div>
+            <div id="footer-grid" class="grid_12">
+                <div id="footer-ornament"></div>
+                <div id="footer-content"></div>
+                <div id="footer-uow-logo"></div>
+                <div id="footer">
+                    
+<div>
+    <p>
+    
+        Copyright &copy; 2014 <a href="http://www.uow.edu.au/">
+            University of Wollongong</a>.  All rights reserved.
+
+        For complete copyright information, see our <a href="copyright.html">copyright page</a>.
+    
+    </p>
+</div>
+                </div>
+            </div>
+        </div>
+        </body>
+       
+    
+</html>
